@@ -6,6 +6,12 @@
 **About:** This will break down how to use hyperlink html code in your leaflet maps in RStudio.<br>
 **Youtube video:**[Leaflet Mapping in RStudio - Custom Popups](https://www.youtube.com/watch?v=mTTuUGisxDk)
 
+**[1. Introduction](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#introduction)**<br>
+**[2. Adding Hyperlinks](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#introduction)**<br>
+  **_[2.1 Single Static Links](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#option-1)_**
+  **_[2.2 Dynamic Variable Links](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#option-2)_**
+
+
 ### Introduction
 
 Here is the final script from the end of the tutuorial video link above. Following this will be a demponstration of including **_hyperlinks_** in your popup windows.
@@ -37,7 +43,7 @@ m <- leaflet() %>%
 # print map
 m
 ```
-### Adding hyperlinks in the popup window
+### Adding Hyperlinks
 There are plenty of ways to go about doing this in the leaflet package, but I will outline two here.
 
 1.  **A single static link for in all popup windows**
@@ -66,7 +72,9 @@ m
 #### Option 2
 
 - In this option we will add a different hyperlink to each popup by adding the links into the `data` variable that was created.
-    1. First create a list of the links you would like to add to your data frame. <br>(**_NOTE_** _this only applies to a data frame that doesn't already have the links in them. If you have a `.csv` or `.xls` table with the information already in it you will not need to do this step._ )
+    1. First create a list of the links you would like to add to your data frame. This step will only need to be done if you are creating your data from scratch or if you need to combine an existing dataset with a set of hyperlinks. If it is the ladder then be sure that the list of hyperlinks is as long as the length of the columns in your origional data or you may have problems.<br>
+    
+    Okay lets create the list of hyperlinks:
     ```r
     # create list of links in a variable
     links.list <- c("<a href='https://www.youtube.com/channel/UCTalI0S14Ek6DcvvvFIFPOg'>GeomaTECHs YT Channel</a>",
