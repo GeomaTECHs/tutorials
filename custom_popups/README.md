@@ -73,7 +73,7 @@ m
 #### Option 2
 
 - In this option we will add a different hyperlink to each popup by adding the links into the `data` variable that was created.
-    1. First create a list of the links you would like to add to your data frame. This step will only need to be done if you are creating your data from scratch or if you need to combine an existing dataset with a set of hyperlinks. If it is the ladder then be sure that the list of hyperlinks is as long as the length of the columns in your origional data or you may have problems.<br>
+    1. First create a list of the links you would like to add to your data frame. This step will only need to be done if you are creating your data from scratch or if you need to combine an existing dataset with a set of hyperlinks. If it is the latter, then be sure the list of hyperlinks is as long as the length of the columns in your origional data or you may have problems.<br>
     
        Okay lets create the list of hyperlinks:
        ```r
