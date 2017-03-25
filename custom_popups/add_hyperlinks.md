@@ -4,9 +4,12 @@
 
 **Author:** Brent Thorne <br>
 **About:** This will break down how to use hyperlink html code in your leaflet maps in RStudio.<br>
-**Youtube video:** https://www.youtube.com/watch?v=mTTuUGisxDk
+**Youtube video:**[Leaflet Mapping in RStudio - Custom Popups](https://www.youtube.com/watch?v=mTTuUGisxDk)
 
-### Origional final script from video
+### Introduction
+
+Here is the final script from the end of the tutuorial video link above. Following this will be a demponstration of including **_hyperlinks_** in your popup windows.
+
 ```r
 # load leaflet library
 library(leaflet)
@@ -40,7 +43,7 @@ There are plenty of ways to go about doing this in the leaflet package, but I wi
 1.  **A single static link for in all popup windows**
 2.  **Creating dynamic variables to use for seperate links in each popup window.**
 
-#### **Option 1**
+#### Option 1
 - Here we will simply add a new line to the paste function in the origional script above. HTML links can br written using the following notation: ```<a href="url">link text</a>```
 - To impliment this into the `paste()` function in `R` we will use a link to the GeomaTECHs YouTube channel: https://www.youtube.com/channel/UCTalI0S14Ek6DcvvvFIFPOg.
 
@@ -59,3 +62,46 @@ m <- leaflet() %>%
 # print map
 m
 ```
+
+#### Option 2
+
+- In this option we will add a different hyperlink to each popup by adding the links into the `data` variable that was created.
+    1. First create a list of the links you would like to add to your data frame. <br>(**_NOTE_** _this only applies to a data frame that doesn't already have the links in them. If you have a `.csv` or `.xls` table with the information already in it you will not need to do this step._ )
+    ```r
+    # create list of links in a variable
+    links.list <- c("<a href='https://www.youtube.com/channel/UCTalI0S14Ek6DcvvvFIFPOg'>GeomaTECHs YT Channel</a>",
+                    "<a href='https://www.youtube.com/watch?v=vl9D3uTk36k'>GeomaTECHs Tutorial</a>")
+    ```
+    2. Now we can add a `link` colummn to our `data` variable using the `data$link`.
+    ```r
+    data$link <- links.list    
+    ```
+    3. The final step is to add the variable `link` to the `paste()` function. In this example I have placed the link under the YouTube videos.
+    ```r
+    
+    # create the leaflet map variable
+    m <- leaflet() %>% 
+      addProviderTiles("Esri.WorldTopoMap") %>% 
+      addMarkers(
+      data=data,
+      lat=~lat,
+      lng=~lng,
+      popup= ~paste("<h3 style='color: red'>Hello World</h3>","<b>Name:</b>",name,"<br>","<b>Score:</b>",score, video,link,sep=" ")
+      )
+
+    # print the map
+    m    
+    ```
+
+### Conclusion
+For every tutorial video on YouTube I will try and use this GitHub account to expand on any complicated questions that viewers may have. As more questions come in I will add information to these documents hopefully answering them. So be sure to keep checking back for new information.
+
+
+
+
+
+
+
+
+
+
