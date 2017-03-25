@@ -1,4 +1,6 @@
-# GeomaTECHs Tutorials ![Logo]()
+![](https://pbs.twimg.com/profile_banners/812364475772837889/1483851647/1500x500)
+
+# Custom Popups Tutorial
 
 **Author:** Brent Thorne <br>
 **About:** This will break down how to use hyperlink html code in your leaflet maps in RStudio.<br>
