@@ -69,6 +69,7 @@ m <- leaflet() %>%
 # print map
 m
 ```
+![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch.png)
 
 #### Option 2
 
@@ -101,6 +102,8 @@ m
        # print the map
        m    
        ```
+![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch.png)
+![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch1.png)
 
 ### Conclusion
 For every tutorial video on YouTube I will try and use this GitHub account to expand on any complicated questions that viewers may have. As more questions come in I will add information to these documents hopefully answering them. So be sure to keep checking back for new information.
