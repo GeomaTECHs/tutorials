@@ -14,7 +14,7 @@
 **[3 Conclusion](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#conclusion)**
 
 
-### Introduction
+# Introduction
 
 Here is the final script from the end of the tutuorial video link above. Following this will be a demponstration of including **_hyperlinks_** in your popup windows.
 
@@ -45,13 +45,14 @@ m <- leaflet() %>%
 # print map
 m
 ```
-### Adding Hyperlinks
+![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch2.png)![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch3.png)
+# Adding Hyperlinks
 There are plenty of ways to go about doing this in the leaflet package, but I will outline two here.
 
 1.  **A single static link for in all popup windows**
 2.  **Creating dynamic variables to use for seperate links in each popup window.**
 
-#### Option 1
+### Option 1
 - Here we will simply add a new line to the paste function in the origional script above. HTML links can br written using the following notation: ```<a href="url">link text</a>```
 - To impliment this into the `paste()` function in `R` we will use a link to the GeomaTECHs YouTube channel: https://www.youtube.com/channel/UCTalI0S14Ek6DcvvvFIFPOg.
 
@@ -72,7 +73,7 @@ m
 ```
 ![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch.png)
 
-#### Option 2
+### Option 2
 
 - In this option we will add a different hyperlink to each popup by adding the links into the `data` variable that was created.
     1. First create a list of the links you would like to add to your data frame. This step will only need to be done if you are creating your data from scratch or if you need to combine an existing dataset with a set of hyperlinks. If it is the latter, then be sure the list of hyperlinks is as long as the length of the columns in your origional data or you may have problems.<br>
@@ -106,5 +107,5 @@ m
 ![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch.png)
 ![](https://raw.githubusercontent.com/GeomaTECHs/tutorials/master/custom_popups/Sketch1.png)
 
-### Conclusion
+# Conclusion
 For every tutorial video on YouTube I will try and use this GitHub account to expand on any complicated questions that viewers may have. As more questions come in I will add information to these documents hopefully answering them. So be sure to keep checking back for new information.
