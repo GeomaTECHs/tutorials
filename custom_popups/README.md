@@ -2,11 +2,13 @@
 
 # Custom Popups Tutorial
 
-**Author:** Brent Thorne <br>
-**About:** This will break down how to use hyperlink html code in your leaflet maps in RStudio.<br>
-**Youtube video:** [Leaflet Mapping in RStudio - Custom Popups](https://www.youtube.com/watch?v=mTTuUGisxDk)
+**Author:**&nbsp;&nbsp;Brent Thorne <br>
+**About:** &nbsp;&nbsp;This will break down how to customize popup options in the `leaflet()` package in `R`. Also there is a breakdown &nbsp;&nbsp;of using hyperlink html code in the popups.<br>
+**YouTube:**&nbsp;&nbsp;[Leaflet Mapping in RStudio - Custom Popups](https://www.youtube.com/watch?v=mTTuUGisxDk)
 
 **[1. Introduction](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#introduction)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_[1.1 Code from YouTube](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#youtube-code)_**<br>
+
 **[2. Adding Hyperlinks](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#introduction)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **_[2.1 Single Static Links](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#option-1)_**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_[2.2 Dynamic Variable Links](https://github.com/GeomaTECHs/tutorials/blob/master/custom_popups/add_hyperlinks.md#option-2)_**<br>
